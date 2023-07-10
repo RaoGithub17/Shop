@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %} 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Famous Ice-Cream Shop</title>
+    <style type="text/css">
+        .inner{ 
+            width: 1350px;
+            margin: auto;
+            border: 1px white;
+            margin-top: 10px;
+            -webkit-text-fill-color: crimson;
+        }
+        .col{
+            width: 100%;
+            text-align: center;
+        }
+        .col img{
+            width: 100%;
+        }
+        @media only screen and (min-width: 200px) and (max-width: 567px){
+            .inner{
+                width: 100%;
+            }
+            .col{
+            width: 100%;
+            }
+        }
+        @media only screen and (min-width: 568px) and (max-width: 992px){
+            .inner{
+                width: 100%;
+            }
+            .col{
+            width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="inner">
+        <div class="col">
+            <img src="/static/slide.jpg.jpg"  width="1350px" height="500" alt="">
+            <h3>
+              Not Only The Name Of The Shop Is Famous Ice-Creams But Our Taste And Ice-Creams Are Also Famous
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock body %}

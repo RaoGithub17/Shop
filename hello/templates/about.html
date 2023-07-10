@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% block title %}
+About
+{% endblock title %}
+{% block body %} 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>What We ARE All About</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            .abt{
+                width: 1349px;
+                height: 1000px;
+                background: url("/static/about.jpg") no-repeat;
+                background-size: cover;
+                -webkit-text-fill-color: green;
+                text-align: center;
+                font-style: italic;
+                padding-top: 12px;
+                
+            }
+            .row1{
+                width: 1330px;
+                height: 250px;
+                margin-top: 8px;
+            }
+            .row1col1{
+                width: 665px;
+                height: 250px;
+                text-align: center;
+                -webkit-text-fill-color: yellow;
+                font-size: 20px;
+                float: left;
+                padding: 5px;
+            }
+            .row1col2{
+                width: 665px;
+                height: 250px;
+                text-align: center;
+                -webkit-text-fill-color: red;
+                font-size: 20px;
+                float: left;
+                padding: 5px;
+
+            }
+            .row2{
+                width: 1340px;
+                height: 250p;
+            }
+            .row2col1{
+                width: 665px;
+                height: 250px;
+                text-align: center;
+                -webkit-text-fill-color: darkorange;
+                font-size: 20px;
+                float: left;
+                padding: 5px;
+
+            }
+            .row2col2{
+                width: 665px;
+                height: 250px;
+                text-align: center;
+                -webkit-text-fill-color: blue;
+                font-size: 20px;
+                float: left;
+                padding: 5px;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="abt">
+            <h1>'FAMOUS ICE-CREAMS'</h1><br>
+            <div class="row1">
+                <div class="row1col1">
+                    <h3> When We Started?</h3>
+                    <p>Devoted to delivering the exceptionally best-frozen ice-creams, cup-cakes and softies ‘FAMOUS ICE-CREAMS’ opened in August 2021  in Village( Rewari). Quite a while later, we moved our retail business to a bigger space at BMG Mall offering a far-reaching window into an open kitchen, where our solidified Ice-Creams are handmade in little clumps, guaranteeing the most astounding quality.
+                    </p>
+                </div>
+                <div class="row1col2">
+                    <h3> What We Achieved?</h3>    
+                    <p>We source the world over for kinds of immaculateness and perfection when conceivable sourcing locally and naturally. We opened our second retail store at Connaught Place (corner of the tenth Street) in mid 2022. It would be ideal if you take a trip for a preference for our new neighborhood!
+                    </p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row2col1">
+                    <h3> How We Achieved It?</h3>
+                    <p> With a developing rundown of multiple flavors, ‘FAMOUS ICE-CREAMS’ brought into the world with the thought, as our name proposes, of being a custom “lab”, where Ice-Cream experts and food providers are urged and invited to work with us to create one of a kind flavors for their individual menus.
+                    </p>
+                </div>
+                <div class="row2col2">
+                    <h3> Special Offers </h3>
+                    <p>To our discount customers, we offer weekday conveyance, for nothing out of pocket, and are accessible for counsel on everything solidified. It would be ideal if you don’t hesitate to call to ask for tests, to talk about our items, or to mastermind a tasting in our shop.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock body %}

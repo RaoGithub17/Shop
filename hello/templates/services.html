@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+{% block title %}
+services
+{% endblock title %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <style type="text/css">
+        .main{
+            width: 1330px;
+            height: 1010px;
+            margin: 10px;
+            padding: 5px;
+            background-color: grey;
+        }
+        .row1{
+            width: 1320px;
+            height: 250px;
+        }
+        .row1-col-1{
+            width: 264px;
+            height: 250px;
+            background: url("/static/cherrycrumble.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: blue;
+            text-align: center;
+            float: left;
+        }
+        .row1-col-2{
+            width: 264px;
+            height: 250px;
+            background: url("/static/butterscotchsofty.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color:  red;
+            text-align: center;
+            float: left;
+        }
+        .row1-col-3{
+            width: 264px;
+            height: 250px;
+            background: url("/static/chocochippsicecream.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: yellow;
+            text-align: center;
+            float: left;
+        }
+        .row1-col-4{
+            width: 264px;
+            height: 250px;
+            background: url("/static/cornetto.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: black;
+            text-align: center;
+            float: left;
+        }
+        .row1-col-5{
+            width: 264px;
+            height: 250px;
+            background: url("/static/cranberryicecream.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color:  orangered;
+            text-align: center;
+            float: left;
+        }
+        .row2{
+            width: 1320px;
+            height: 250px;
+        }
+        .row2-col-1{
+            width: 264px;
+            height: 250px;
+            background: url("/static/creamycupcakes.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: yellow;
+            text-align: center;
+            float: left;
+        }
+        .row2-col-2{
+            width: 264px;
+            height: 250px;
+            background: url("/static/Desimango.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: orange;
+            text-align: center;
+            float: left;
+        }
+        .row2-col-3{
+            width: 264px;
+            height: 250px;
+            background: url("/static/doublelayer.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: blue;
+            text-align: center;
+            float: left;
+        }
+        .row2-col-4{
+            width: 264px;
+            height: 250px;
+            background: url("/static/flatlaylollypops.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color:  black;
+            text-align: center;
+            float: left;
+        }
+        .row2-col-5{
+            width: 264px;
+            height: 250px;
+            background: url("/static/frozenchocolatecup.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: purple;
+            text-align: center;
+            float: left;
+        }
+        .row3{
+            width: 1320px;
+            height: 250px;
+        }
+        .row3-col-1{
+            width: 264px;
+            height: 250px;
+            background: url("/static/Indianmungeli.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: orange;
+            text-align: center;
+            float: left;
+        }
+        .row3-col-2{
+            width: 264px;
+            height: 250px;
+            background: url("/static/kesarbadam.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: black;
+            text-align: center;
+            float: left;
+        }
+        .row3-col-3{
+            width: 264px;
+            height: 250px;
+            background: url("/static/meltedcreamychocolate.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: orangered;
+            text-align: center;
+            float: left;
+        }
+        .row3-col-4{
+            width: 264px;
+            height: 250px;
+            background: url("/static/multilayermixcone.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: blueviolet;
+            text-align: center;
+            float: left;
+        }
+        .row3-col-5{
+            width: 264px;
+            height: 250px;
+            background: url("/static/raspberryicecream.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: hotpink;
+            text-align: center;
+            float: left;
+        }
+        .row4{
+            width: 1320px;
+            height: 250px;
+        }
+        .row4-col-1{
+            width: 264px;
+            height: 250px;
+            background: url("/static/sprinklecornetto.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: strong black;
+            text-align: center;
+            float: left;
+        }
+        .row4-col-2{
+            width: 264px;
+            height: 250px;
+            background: url("/static/sprinklesicecream.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: yellowgreen;
+            text-align: center;
+            float: left;
+        }
+        .row4-col-3{
+            width: 264px;
+            height: 250px;
+            background: url("/static/sprinklevanilla.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: strong black;
+            text-align: center;
+            float: left;
+        }
+        .row4-col-4{
+            width: 264px;
+            height: 250px;
+            background: url("/static/strawberrysofty.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: red;
+            text-align: center;
+            float: left;
+        }
+        .row4-col-5{
+            width: 264px;
+            height: 250px;
+            background: url("/static/suratifrozencupstlyle.jpg") no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            -webkit-text-fill-color: lawngreen;
+            text-align: center;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row1">
+            <div class="row1-col-1">
+                <p> Butterscotch Softy <br>
+                    ₹100 </p>
+            </div>
+            <div class="row1-col-2">
+                <p> Cherry Crumble Ice-Cream <br>
+                    ₹100</p>
+            </div>
+            <div class="row1-col-3">
+                <p> Chocochipps Ice-Cream <br>
+                    ₹100</p>
+            </div>
+            <div class="row1-col-4">
+                <p> Cornetto Cone <br>
+                    ₹100</p>
+            </div>
+            <div class="row1-col-5">
+                <p> Cranberry Ice-Cream <br>
+                    ₹100</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="row2-col-1">
+                <p> Creamy Cup Cakes <br>
+                    ₹150</p>
+            </div>
+            <div class="row2-col-2">
+                <p> Desi Mango Ice-Cream <br>
+                    ₹150</p>
+            </div>
+            <div class="row2-col-3">
+                <p> Double Layer Cone <br>
+                    ₹150</p>
+            </div>
+            <div class="row2-col-4">
+                <p> Flatlay Lollypops Ice-cream <br>
+                    ₹150</p>
+            </div>
+            <div class="row2-col-5">
+                <p> Frozen Chocolate Cup <br>
+                    ₹150</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="row3-col-1">
+                <p> Indian Mungeli Ice-Cream <br>
+                    ₹200</p>
+            </div>
+            <div class="row3-col-2">
+                <p> Kesar Badam Ice-Cream <br>
+                    ₹200</p>
+            </div>
+            <div class="row3-col-3">
+                <p> Melted Creamy Chocolate Ice-Cream <br>
+                    ₹200</p>
+            </div>
+            <div class="row3-col-4">
+                <p> Multilayer Mix Cone <br>
+                    ₹200</p>
+            </div>
+            <div class="row3-col-5">
+                <p> Raspberry Icecream <br>
+                    ₹200</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="row4-col-1">
+                <p> Sprinkle Cornetto cone <br>
+                    ₹180</p>
+            </div>
+            <div class="row4-col-2">
+                <p> Sprinkles Ice-Cream <br>
+                    ₹140</p>
+            </div>
+            <div class="row4-col-3">
+                <p> Sprinkle Vanilla Ice-Cream <br>
+                    ₹110</p>
+            </div>
+            <div class="row4-col-4">
+                <p> Strawberry Softy <br>
+                    ₹120</p>
+            </div>
+            <div class="row4-col-5">
+                <p> Surati Style Frozen Cup <br>
+                    ₹250</p>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock body %}
